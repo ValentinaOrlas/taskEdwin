@@ -16,7 +16,7 @@ buttonLower.addEventListener('click', () => {
 });
 
 const handleKeyDown = (event) => {
-    const numberOfChars = textArea.value.length;
+    const numberOfChars = textArea.value.length + 1;
     const textMax = 255;
     if (textArea.value.length >= 255 && event.key !== "Backspace") {
         event.preventDefault();
